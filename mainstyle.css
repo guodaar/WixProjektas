@@ -1,10 +1,57 @@
 body {
   background-color: rgb(255, 255, 255);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(29, 59, 42);
+  font-size: 18px;
 }
 
 h1 {
   font-family: "Alex Brush", cursive;
+  color: rgb(12, 30, 47);
+}
+
+h2 {
+  font-family: "Caudex", serif;
+  color: rgb(29, 59, 42);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.top header a {
+  text-decoration: none;
+  text-align: center;
+}
+.top header a h1 {
+  color: rgb(29, 59, 42);
+  margin-bottom: 5px;
+}
+.top header a p {
+  color: rgb(29, 59, 42);
+  margin-top: 0;
+  font-size: 16px;
+}
+.top .topMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.top .topMenu a {
+  text-decoration: none;
+  color: rgb(29, 59, 42);
+  padding-left: 10px;
+}
+.top .topMenu a:hover {
+  color: rgb(72, 118, 92);
+}
+.top .login p::before {
+  font-family: "FontAwesome";
+  content: "\f2bd";
+  color: black;
+  margin-right: 10px;
+  font-size: 22px;
 }
 
 .main {
@@ -12,4 +59,31 @@ h1 {
   flex-direction: column;
   width: 900px;
   margin: 0 auto;
+}
+.main aside .socialsSide {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 40px;
+}
+.main aside .socialsSide a {
+  padding: 5px;
+  color: black;
+}
+.main aside .chatbox {
+  background-color: rgb(29, 59, 42);
+  color: white;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+}
+.main aside .chatbox p {
+  margin: 16px 45px;
+}
+.main aside .chatbox p::before {
+  font-family: "FontAwesome";
+  content: "\f27a";
+  margin-right: 10px;
+  font-size: 22px;
 }/*# sourceMappingURL=mainstyle.css.map */
