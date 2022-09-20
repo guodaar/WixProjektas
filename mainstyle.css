@@ -1,1 +1,15 @@
-/*# sourceMappingURL=mainstyle.css.map */
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Alex Brush", cursive;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  margin: 0 auto;
+}/*# sourceMappingURL=mainstyle.css.map */

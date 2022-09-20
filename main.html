@@ -4,31 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mainstyle.scss">
+    <link rel="stylesheet" href="mainstyle.css">
     <script src="https://kit.fontawesome.com/0eb9458fd3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
     <title>Dietitian Website</title>
 </head>
 <body>
-    <header>
-        <h1>Amy Kohler</h1>
-        <p>Dietitian</p>
-    </header>
-    <nav>
-        <div class="login">
-            <i class="fa-solid fa-circle-user"></i>
-            <p>Log In</p>
+    <div class="main">
+        <header>
+            <a href="main.html">
+                <h1>Amy Kohler</h1>
+                <p>Dietitian</p>
+            </a>
+        </header>
+        <nav class="top">
+            <div class="login">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>Log In</p>
+            </div>
+            <div class="menu">
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="pricing.html">Pricing Plans</a>
+                <a href="programs.html">Programs</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <main>
+            <aside>
+                <div class="socialsSide">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="chatbox">
+                    <i class="fa-solid fa-message"></i>
+                    <p>Let's Chat!</p>
+                </div>
+            </aside>
+            <section class="quote">
+                <p>“Our Food Should Be Our Medicine & Our Medicine Should Be Our Food”</p>
+                <button>Book a Session</button>
+            </section>
+            <section  class="intro">
+                <h2>Meet Amy</h2>
+                <p>
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+                </p>
+                <button>Read More</button>
+            </section>
+            <section class="counselling">
+                <h2>Dietitian Counseling</h2>
+                <div class="session">
+                    <h2>Initial Assessment</h2>
+                    <p>1 hr</p>
+                    <p>$75</p>
+                    <button>Book Now</button>
+                </div>
+                <button>All Sessions</button>
+            </section>
+            <section class="recipes">
+                <h2>Recipes & Tips</h2>
+                <p>
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                </p>
+                <button>Read All</button>
+                <div class="post">
+                    <div class="postContent">
+                        <p>Admin <i class="fa-solid fa-crown"></i></p>
+                        <p>Aug 25 • 1 min</p>
+                        <h2>How Dietitians Fuel for the Morning</h2>
+                    </div> 
+                    <div class="comment">
+                        <i class="fa-regular fa-message"></i><p>O</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <nav class="bottom">
+        <div class="title">
+            <a href="main.html">
+                <h1>Amy Kohler</h1>
+                <p>Dietitian</p>
+            </a>
         </div>
-        <div class="menu">
-            About
-Services
-Pricing Plans
-Programs
-Blog
-Contact
+        <div class="bottomMenu">
+            <div class="socials">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="menu">
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="pricing.html">Pricing Plans</a>
+                <a href="programs.html">Programs</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </div>
     </nav>
-    <aside></aside>
-    <main></main>
-    <footer></footer>
+    <footer>
+        <p>© 2023 by Amy Kohler. Proudly created with Wix.com</p>
+    </footer>
 </body>
 </html>
