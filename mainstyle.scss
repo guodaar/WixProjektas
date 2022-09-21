@@ -3,11 +3,14 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(29,59,42);
     font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-family: 'Alex Brush', cursive;
     color: rgb(12,30,47);
+    font-size: 27px;
 }
 
 h2 {
@@ -37,7 +40,7 @@ h2 {
         }
     }
 
-    .topMenu {
+    nav {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -64,47 +67,98 @@ h2 {
 
 }
 
+aside {
+
+    .socials {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        right: 40px;
+        top: 120px;
+
+        a {
+            padding: 5px;
+            color: black;
+        }
+    }
+
+    .chatbox {
+        background-color: rgb(29,59,42);
+        color: rgb(255,255,255);
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        right: 20px;
+        box-shadow: 0 0 3px rgb(172, 172, 172);
+
+        p {
+            margin: 16px 45px;
+        }
+
+        p::before {
+            font-family: 'FontAwesome';
+            content: "\f27a";
+            margin-right: 10px; 
+            font-size: 22px;
+        }
+    }
+
+}
+
 .main {
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 1050px;
     margin: 0 auto;
+}
 
-    aside {
+.bottom {
+    background-color: rgb(29,59,42);
 
-        .socialsSide {
-            position: fixed;
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        width: 1050px;
+        margin: 0 auto;
+
+        .title {
+            a {
+                text-decoration: none;
+                text-align: center;
+
+                h1 {
+                    color: rgb(255,255,255);
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    color: rgb(255,255,255);
+                    margin-top: 0;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        nav {
             display: flex;
             flex-direction: column;
-            right: 40px;
-
+            align-items: flex-end;
+            gap: 10px;
+            
             a {
-                padding: 5px;
-                color: black;
+                text-decoration: none;
+                color: rgb(255,255,255);
+                padding-left: 10px;
+            }
+
+            a:hover {
+                color: rgb(207, 224, 215);
             }
         }
-
-        .chatbox {
-            background-color: rgb(29,59,42);
-            color: white;
-            display: flex;
-            position: fixed;
-            bottom: 0;
-            right: 20px;
-
-            p {
-                margin: 16px 45px;
-            }
-
-            p::before {
-                font-family: 'FontAwesome';
-                content: "\f27a";
-                margin-right: 10px; 
-                font-size: 22px;
-            }
-        }
-
     }
-    
-    
+}
+
+footer {
+    font-size: 15px;
+
 }

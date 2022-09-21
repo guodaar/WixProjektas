@@ -3,11 +3,14 @@ body {
   font-family: "Josefin Sans", sans-serif;
   color: rgb(29, 59, 42);
   font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   font-family: "Alex Brush", cursive;
   color: rgb(12, 30, 47);
+  font-size: 27px;
 }
 
 h2 {
@@ -32,18 +35,18 @@ h2 {
   margin-top: 0;
   font-size: 16px;
 }
-.top .topMenu {
+.top nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
 }
-.top .topMenu a {
+.top nav a {
   text-decoration: none;
   color: rgb(29, 59, 42);
   padding-left: 10px;
 }
-.top .topMenu a:hover {
+.top nav a:hover {
   color: rgb(72, 118, 92);
 }
 .top .login p::before {
@@ -54,36 +57,80 @@ h2 {
   font-size: 22px;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  width: 900px;
-  margin: 0 auto;
-}
-.main aside .socialsSide {
+aside .socials {
   position: fixed;
   display: flex;
   flex-direction: column;
   right: 40px;
+  top: 120px;
 }
-.main aside .socialsSide a {
+aside .socials a {
   padding: 5px;
   color: black;
 }
-.main aside .chatbox {
+aside .chatbox {
   background-color: rgb(29, 59, 42);
-  color: white;
+  color: rgb(255, 255, 255);
   display: flex;
   position: fixed;
   bottom: 0;
   right: 20px;
+  box-shadow: 0 0 3px rgb(172, 172, 172);
 }
-.main aside .chatbox p {
+aside .chatbox p {
   margin: 16px 45px;
 }
-.main aside .chatbox p::before {
+aside .chatbox p::before {
   font-family: "FontAwesome";
   content: "\f27a";
   margin-right: 10px;
   font-size: 22px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.bottom {
+  background-color: rgb(29, 59, 42);
+}
+.bottom .menu {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  margin: 0 auto;
+}
+.bottom .menu .title a {
+  text-decoration: none;
+  text-align: center;
+}
+.bottom .menu .title a h1 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+}
+.bottom .menu .title a p {
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  font-size: 16px;
+}
+.bottom .menu nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.bottom .menu nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+}
+.bottom .menu nav a:hover {
+  color: rgb(207, 224, 215);
+}
+
+footer {
+  font-size: 15px;
 }/*# sourceMappingURL=mainstyle.css.map */
