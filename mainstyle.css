@@ -1,10 +1,13 @@
+body, p, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   font-family: "Josefin Sans", sans-serif;
   color: rgb(29, 59, 42);
   font-size: 18px;
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
@@ -18,9 +21,17 @@ h2 {
   color: rgb(29, 59, 42);
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .top {
   display: flex;
   justify-content: space-between;
+  padding: 25px 0 35px;
 }
 .top header a {
   text-decoration: none;
@@ -39,12 +50,12 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 10px;
+  gap: 20px;
 }
 .top nav a {
   text-decoration: none;
   color: rgb(29, 59, 42);
-  padding-left: 10px;
+  padding-left: 25px;
 }
 .top nav a:hover {
   color: rgb(72, 118, 92);
@@ -62,7 +73,7 @@ aside .socials {
   display: flex;
   flex-direction: column;
   right: 40px;
-  top: 120px;
+  top: 185px;
 }
 aside .socials a {
   padding: 5px;
@@ -75,7 +86,7 @@ aside .chatbox {
   position: fixed;
   bottom: 0;
   right: 20px;
-  box-shadow: 0 0 3px rgb(172, 172, 172);
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
 }
 aside .chatbox p {
   margin: 16px 45px;
@@ -87,21 +98,18 @@ aside .chatbox p::before {
   font-size: 22px;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  width: 1050px;
-  margin: 0 auto;
-}
-
 .bottom {
   background-color: rgb(29, 59, 42);
+  padding-top: 300px;
 }
 .bottom .menu {
   display: flex;
   justify-content: space-between;
-  width: 1050px;
+  align-items: baseline;
+  width: 1060px;
   margin: 0 auto;
+  border-top: 1px solid white;
+  padding: 80px 20px 60px;
 }
 .bottom .menu .title a {
   text-decoration: none;
@@ -114,23 +122,32 @@ aside .chatbox p::before {
 .bottom .menu .title a p {
   color: rgb(255, 255, 255);
   margin-top: 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 .bottom .menu nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 10px;
+  gap: 30px;
 }
 .bottom .menu nav a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  padding-left: 10px;
+  padding-left: 25px;
 }
 .bottom .menu nav a:hover {
   color: rgb(207, 224, 215);
 }
+.bottom .menu .socials {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.bottom .menu .socials a {
+  padding-left: 10px;
+}
 
 footer {
-  font-size: 15px;
+  color: black;
+  font-size: 16px;
+  padding: 25px 100px;
 }/*# sourceMappingURL=mainstyle.css.map */
