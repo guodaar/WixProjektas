@@ -1,0 +1,292 @@
+body, p, h1, h2, h3, li, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255,255,255);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Alex Brush', cursive;
+    color: rgb(12,30,47);
+    font-size: 27px;
+}
+
+h2, h3, h4 {
+    font-family: 'Caudex', serif;
+    color: rgb(29,59,42);
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 35px;
+
+    header {
+        a {
+            text-decoration: none;
+            text-align: center;
+
+            h1 {
+                color: rgb(29,59,42);
+                margin-bottom: 5px;
+            }
+
+            p {
+                color: rgb(29,59,42);
+                margin-top: 0;
+                font-size: 16px;
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        
+        a {
+            text-decoration: none;
+            color: rgb(29,59,42);
+            padding-left: 25px;
+        }
+
+        a:hover {
+            color: rgb(72, 118, 92);
+        }
+    }
+
+    .login p::before {
+        font-family: 'FontAwesome';
+        content: "\f2bd";
+        color: black;
+        margin-right: 10px; 
+        font-size: 22px;
+    }
+
+}
+
+aside {
+
+    .socials {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        right: 40px;
+        top: 180px;
+
+        a {
+            padding: 5px;
+            color: black;
+        }
+    }
+
+    .chatbox {
+        background-color: rgb(29,59,42);
+        color: rgb(255,255,255);
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        right: 20px;
+        box-shadow: 0 0 3px rgba(255,255,255, 0.5);
+
+        p {
+            margin: 16px 45px;
+        }
+
+        p::before {
+            font-family: 'FontAwesome';
+            content: "\f27a";
+            margin-right: 10px; 
+            font-size: 22px;
+        }
+    }
+
+}
+
+main {
+
+    p {
+        font-size: 16px;
+        line-height: 1.3;
+        color: black;
+    }
+
+    .title{
+        text-align: center;
+        padding: 50px 0;
+
+        h2 {
+            margin-bottom: 15px;
+        }
+    }
+
+    .pricingPlans {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px 50px 120px;
+        column-gap: 32px;
+
+        .plan, .benefits {
+            border: 1px solid black;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .plan {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        li::before {
+            font-family: 'FontAwesome';
+            content: "\f058";
+            padding-right: 10px;
+            color:rgb(57, 85, 69);
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .pricing {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .price {
+            font-size: 80px;
+        }
+
+        .planFocus {
+            background-color: rgb(201,216,191);
+            position: relative;
+        }
+
+        .bestValue {
+            background-color: rgb(29,59,42);
+            color: white;
+            position: absolute;
+            top: -15px;
+            left: 110px;
+            font-size: 14px;
+            padding: 8px 10px;
+
+        }
+
+        .benefitFocus {
+            background-color: rgb(29,59,42);
+            color: white;
+
+            li:before {
+                color: white;
+            }
+        }
+
+        button {
+            background-color:  rgb(29,59,42);
+            border: none;
+            color: white;
+            font-size: 14px;
+            padding: 12px 90px;
+        }
+
+        button:hover {
+            background-color: rgb(72, 118, 92);
+        }
+
+    }
+}
+
+.bottom {
+    background-color: rgb(29,59,42);
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 1060px;
+        margin: 0 auto;
+        padding: 80px 20px 60px;
+
+        .title {
+            a {
+                text-decoration: none;
+                text-align: center;
+
+                h1 {
+                    color: rgb(255,255,255);
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    color: rgb(255,255,255);
+                    margin-top: 0;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 30px;
+            
+            a {
+                text-decoration: none;
+                color: rgb(255,255,255);
+                padding-left: 25px;
+            }
+
+            a:hover {
+                color: rgb(207, 224, 215);
+            }
+        }
+
+        .socials {
+            color: rgb(255,255,255);
+            font-size: 20px;
+
+            a {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+footer {
+    color: black;
+    font-size: 16px;
+    padding: 25px 100px;
+}
+
