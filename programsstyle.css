@@ -1,1 +1,219 @@
-/*# sourceMappingURL=programsstyle.css.map */
+body, p, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: "Alex Brush", cursive;
+  color: rgb(12, 30, 47);
+  font-size: 27px;
+}
+
+h2, h3, h4 {
+  font-family: "Caudex", serif;
+  color: rgb(29, 59, 42);
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0 35px;
+}
+.top header a {
+  text-decoration: none;
+  text-align: center;
+}
+.top header a h1 {
+  color: rgb(29, 59, 42);
+  margin-bottom: 5px;
+}
+.top header a p {
+  color: rgb(29, 59, 42);
+  margin-top: 0;
+  font-size: 16px;
+}
+.top nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+.top nav a {
+  text-decoration: none;
+  color: rgb(29, 59, 42);
+  padding-left: 25px;
+}
+.top nav a:hover {
+  color: rgb(72, 118, 92);
+}
+.top .login p::before {
+  font-family: "FontAwesome";
+  content: "\f2bd";
+  color: black;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+aside .socials {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 40px;
+  top: 180px;
+}
+aside .socials a {
+  padding: 5px;
+  color: black;
+}
+aside .chatbox {
+  background-color: rgb(29, 59, 42);
+  color: rgb(255, 255, 255);
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+aside .chatbox p {
+  margin: 16px 45px;
+}
+aside .chatbox p::before {
+  font-family: "FontAwesome";
+  content: "\f27a";
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: black;
+}
+main .title {
+  background-color: rgb(201, 216, 191);
+  text-align: center;
+  padding: 70px 230px;
+}
+main .services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  margin: 40px 40px 0;
+  justify-items: center;
+  gap: 32px;
+}
+main .services .item {
+  border: 1px solid rgb(201, 216, 191);
+  display: flex;
+  flex-direction: column;
+}
+main .services img {
+  width: 100%;
+}
+main .services .photo {
+  flex: 1;
+}
+main .services .description {
+  padding: 31px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+main .services .description h3 {
+  margin-bottom: 10px;
+}
+main .services .description p {
+  font-size: 16px;
+}
+main .services .description button {
+  padding: 12px 35px;
+  background-color: rgb(29, 59, 42);
+  color: white;
+  border: 1px solid black;
+}
+main .services .description button:hover {
+  background-color: white;
+  color: black;
+}
+main .services .description .border {
+  border-bottom: 1px solid black;
+  margin-right: 195px;
+  margin-bottom: 20px;
+}
+
+.bottom {
+  background-color: rgb(29, 59, 42);
+}
+.bottom .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 80px 20px 60px;
+}
+.bottom .menu .title a {
+  text-decoration: none;
+  text-align: center;
+}
+.bottom .menu .title a h1 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+}
+.bottom .menu .title a p {
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  font-size: 18px;
+}
+.bottom .menu nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+.bottom .menu nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding-left: 25px;
+}
+.bottom .menu nav a:hover {
+  color: rgb(207, 224, 215);
+}
+.bottom .menu .socials {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.bottom .menu .socials a {
+  padding-left: 10px;
+}
+
+footer {
+  color: black;
+  font-size: 16px;
+  padding: 25px 100px;
+}/*# sourceMappingURL=programsstyle.css.map */
