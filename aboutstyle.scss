@@ -33,7 +33,8 @@ h3 {
 .main {
     display: flex;
     flex-direction: column;
-    width: 1060px;
+    max-width: 1060px;
+    min-width: 900px;
     margin: 0 auto;
 }
 
@@ -137,7 +138,14 @@ main {
     .title{
         background-color: rgb(201,216,191);
         text-align: center;
-        padding: 70px 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 70px 0;
+    }
+
+    .titleWrapper {
+        width: 600px;
     }
 
     .about {
@@ -146,16 +154,25 @@ main {
         .portrait {
             background-color: rgb(29,59,42);
             flex: 1;
-            padding: 150px 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 150px 0;
 
             img {
-                height: 300px;
+                width: 402px;
             }
         }
 
         .aboutAuthor {
             flex: 1;
-            margin: 80px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .text {
+                width: 402px;
+            }
         }
     }
 
@@ -163,6 +180,7 @@ main {
         display: flex;
         justify-content: space-between;
         padding: 130px 0;
+        gap: 20px;
 
         .one {
             height: 370px;
@@ -175,7 +193,7 @@ main {
         }
 
         .three {
-            height: 459px;
+            max-width: 510px;
             align-self: end;
             margin-top: 100px;
         }
@@ -217,7 +235,8 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        width: 1060px;
+        max-width: 1060px;
+        min-width: 800px;
         margin: 0 auto;
         padding: 80px 20px 60px;
 

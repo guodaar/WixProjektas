@@ -10,6 +10,21 @@ body {
   font-size: 18px;
 }
 
+button {
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(29, 59, 42);
+  font-size: 18px;
+  background: none;
+  border: 1px solid black;
+  padding: 15px 45px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(29, 59, 42);
+  color: white;
+}
+
 h1 {
   font-family: "Alex Brush", cursive;
   color: rgb(12, 30, 47);
@@ -20,11 +35,11 @@ h2, h3, h4 {
   font-family: "Caudex", serif;
   color: rgb(29, 59, 42);
   font-weight: normal;
-  margin-bottom: 25px;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 34px;
+  line-height: 1.7;
 }
 
 h3 {
@@ -34,7 +49,8 @@ h3 {
 .main {
   display: flex;
   flex-direction: column;
-  width: 1060px;
+  max-width: 1060px;
+  min-width: 900px;
   margin: 0 auto;
 }
 
@@ -113,6 +129,157 @@ main p {
   line-height: 1.3;
   margin-bottom: 20px;
 }
+main .quote {
+  background-image: url("/pics/1.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .quote .blank {
+  width: 470px;
+}
+main .quote .titleBox {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 600px;
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+main .quote .titleBox h2 {
+  padding: 0 70px;
+}
+main .intro {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .intro img {
+  width: 470px;
+}
+main .intro .description {
+  width: 470px;
+  padding: 110px 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main .intro .description p, main .intro .description h3, main .intro .description button {
+  margin-bottom: 50px;
+}
+main .intro .description p {
+  width: 350px;
+}
+main .intro .description img {
+  margin-top: 20px;
+}
+main .counselling {
+  background-color: rgb(201, 216, 191);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px 0 250px;
+}
+main .counselling .session {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0;
+}
+main .counselling .session .description {
+  background-color: white;
+  padding: 60px;
+}
+main .counselling .session .description p {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+main .counselling .session .description button {
+  margin-top: 20px;
+  padding: 12px 35px;
+  background-color: rgb(29, 59, 42);
+  font-size: 16px;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+main .counselling .session .description button:hover {
+  background-color: rgb(57, 85, 69);
+}
+main .counselling .session .photoWrapper {
+  background-color: black;
+  display: flex;
+}
+main .counselling .session .photoWrapper img {
+  width: 398px;
+  opacity: 1;
+  transition: 0.3s;
+}
+main .counselling .session .photoWrapper img:hover {
+  opacity: 0.8;
+}
+main .recipes {
+  height: 800px;
+  position: relative;
+}
+main .recipes .recipesWrapper {
+  position: absolute;
+  top: -100px;
+  left: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+main .recipes .recipesWrapper .photo img {
+  width: 490px;
+}
+main .recipes .recipesWrapper .rightBlock {
+  width: 470px;
+  margin-top: 250px;
+}
+main .recipes .recipesWrapper .rightBlock .text {
+  width: 400px;
+}
+main .recipes .recipesWrapper .rightBlock .text p, main .recipes .recipesWrapper .rightBlock .text h3, main .recipes .recipesWrapper .rightBlock .text button {
+  margin-bottom: 30px;
+}
+main .recipes .recipesWrapper .post {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 400px;
+}
+main .recipes .recipesWrapper .post img {
+  width: 400px;
+}
+main .recipes .recipesWrapper .post .postContent {
+  padding: 25px;
+}
+main .recipes .recipesWrapper .post .postContent p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+main .recipes .recipesWrapper .post .postContent h3 {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(188, 188, 188);
+}
+main .recipes .recipesWrapper .post .postContent .comment {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+}
+main .recipes .recipesWrapper .post .postContent .comment span {
+  font-size: 12px;
+  padding-left: 3px;
+}
+main .recipes .recipesWrapper .post .postContent .comment .fa-heart {
+  color: red;
+}
 
 .bottom {
   background-color: rgb(29, 59, 42);
@@ -122,7 +289,8 @@ main p {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  width: 1060px;
+  max-width: 1060px;
+  min-width: 800px;
   margin: 0 auto;
   border-top: 1px solid white;
   padding: 80px 20px 60px;
