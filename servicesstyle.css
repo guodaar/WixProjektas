@@ -130,12 +130,15 @@ main .title {
 main .titleWrapper {
   width: 600px;
 }
+main .servicesWrapper {
+  display: flex;
+  justify-content: center;
+}
 main .services {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 20px;
-  margin: 30px 40px 80px;
+  margin: 50px 0 80px;
   justify-items: center;
   gap: 32px;
 }
